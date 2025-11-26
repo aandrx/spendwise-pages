@@ -11,6 +11,7 @@ const navigation = [
   { name: "UI Showcase", href: "/ui-showcase" },
   { name: "Demo", href: "/demo" },
   { name: "Reflections", href: "/reflections" },
+  { name: "Team", href: "/team" },
 ]
 
 export function Navigation() {

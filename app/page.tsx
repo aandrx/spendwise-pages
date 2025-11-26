@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Wallet, Target, Users, Bot, ArrowRight } from "lucide-react"
+import { Wallet, Target, PieChart, Users, Bot, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Track where your money&apos;s going, set budgets that actually stick, and save together with friends
-              using Savings Circles – all with a little help from AI when you need it.
+              using Savings Circles, all with a little help from AI when you need it.
             </p>
             <div className="flex gap-4 justify-center pt-4">
               <Button asChild size="lg">
@@ -100,7 +100,7 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <Users className="h-10 w-10 text-emerald-600 mb-2" />
+                <PieChart className="h-10 w-10 text-emerald-600 mb-2" />
                 <CardTitle>Budgets</CardTitle>
                 <CardDescription>
                   Set and monitor budgets for different categories with smart alerts
@@ -110,7 +110,7 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <Bot className="h-10 w-10 text-emerald-600 mb-2" />
+                <Users className="h-10 w-10 text-emerald-600 mb-2" />
                 <CardTitle>Savings Circles</CardTitle>
                 <CardDescription>
                   Collaborate with group members on shared savings goals

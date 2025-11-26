@@ -33,7 +33,7 @@ export default function DemoPage() {
               </CardHeader>
               <CardContent>
                 <div className="aspect-video bg-muted/30 rounded-lg overflow-hidden">
-                  {youtubeVideoId && youtubeVideoId !== "YOUR_VIDEO_ID_HERE" ? (
+                  {youtubeVideoId ? (
                     <iframe
                       className="w-full h-full rounded-lg"
                       src={`https://www.youtube.com/embed/${youtubeVideoId}`}

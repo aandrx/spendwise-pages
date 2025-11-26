@@ -3,18 +3,19 @@ import { Badge } from "@/components/ui/badge"
 import { Video, Play } from "lucide-react"
 
 export default function DemoPage() {
-  // Replace this with your actual YouTube video ID
-  const youtubeVideoId = "YOUR_VIDEO_ID_HERE"
+  // YouTube video ID for the SpendWise demo
+  const youtubeVideoId = "t1-6TW3L2g8"
 
   return (
     <div className="flex flex-col min-h-screen">
       <section className="py-16 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4 mb-12">
-            <Badge variant="secondary">Video Demonstration</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold">Application Demo</h1>
+            <Badge variant="secondary">Video Demo</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold">See SpendWise in Action</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Watch SpendWise in action with a comprehensive walkthrough of all features and functionality
+              A short walkthrough of how SpendWise helps you stay on top of spending, stick to budgets, 
+              and save together with the people you care about.
             </p>
           </div>
 
@@ -27,7 +28,7 @@ export default function DemoPage() {
                   Full Application Walkthrough
                 </CardTitle>
                 <CardDescription>
-                  See how SpendWise helps travelers manage their budgets with ease
+                  See how SpendWise helps users manage their budgets with ease
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -65,8 +66,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    See how the dashboard provides an at-a-glance view of your travel finances, 
-                    including budget status, recent expenses, and spending trends.
+                    Get a quick tour of the main dashboard: current budget status, recent activity, and the trends that
+                    actually matter for your day‑to‑day decisions.
                   </p>
                 </CardContent>
               </Card>
@@ -77,8 +78,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Watch how easy it is to log expenses, attach receipts, categorize transactions, 
-                    and keep your travel budget organized.
+                    See how fast it is to log a purchase, snap a receipt, and drop it into the right category so nothing
+                    slips through the cracks.
                   </p>
                 </CardContent>
               </Card>
@@ -89,8 +90,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Learn how to create custom budgets for different categories, set spending limits, 
-                    and receive alerts when approaching thresholds.
+                    Watch how budgets are set up for things like food, rent, and fun money – and how SpendWise nudges you
+                    before you cross the line.
                   </p>
                 </CardContent>
               </Card>
@@ -101,8 +102,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Explore Savings Circles for collaborative travel planning, shared expenses, 
-                    and coordinated budget management with travel companions.
+                    Follow a Savings Circle from idea to reality: invite friends, set a goal, track who&apos;s paid what, 
+                    and keep everyone on the same page without awkward money chats.
                   </p>
                 </CardContent>
               </Card>
@@ -113,8 +114,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Experience the AI-powered chatbot providing personalized financial advice, 
-                    spending insights, and budget recommendations.
+                    See the AI assistant in action answering everyday money questions, suggesting tweaks to your budget, 
+                    and highlighting habits you might want to adjust.
                   </p>
                 </CardContent>
               </Card>
@@ -125,8 +126,8 @@ export default function DemoPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Follow a complete user journey from onboarding through daily expense tracking 
-                    to end-of-trip budget analysis and reporting.
+                    Walk through a typical SpendWise day: setting things up, logging real expenses, and checking back in
+                    at the end of the week to see how you did.
                   </p>
                 </CardContent>
               </Card>

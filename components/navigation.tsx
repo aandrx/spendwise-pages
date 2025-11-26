@@ -19,12 +19,12 @@ export function Navigation() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 pl-4 md:pl-6">
           <span className="text-xl md:text-2xl font-bold">SpendWise</span>
         </Link>
         
-        <div className="hidden md:flex md:gap-2 pr-4 md:pr-6">
+        <div className="hidden md:flex md:gap-2 pr-4 md:pr-6 ml-auto">
           {navigation.map((item) => (
             <Button
               key={item.name}

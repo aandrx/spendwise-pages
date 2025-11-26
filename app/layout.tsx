@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SpendWise - Travel Budget Management",
-  description: "A comprehensive showcase of the SpendWise travel budgeting application with features for expense tracking, budget management, savings circles, and AI-powered assistance.",
+  title: "SpendWise - Budget Management",
+  description: "A comprehensive showcase of the SpendWise money management application with features for expense tracking, budget management, savings circles, and AI-powered assistance.",
 };
 
 export default function RootLayout({

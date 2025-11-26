@@ -1,39 +1,39 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Smartphone, Layout } from "lucide-react"
-import Image from "next/image"
+import { Layout } from "lucide-react"
+import { getAssetPath } from "@/lib/utils"
 
 export default function UIShowcasePage() {
   const screenshots = [
     {
       name: "Dashboard",
-      description: "The main hub for viewing financial overview, recent transactions, and quick stats. Features real-time budget tracking with visual progress indicators and spending trends.",
-      features: ["Budget overview cards", "Expense summary charts", "Quick action buttons", "Recent transactions list"],
-      imagePath: "/images/screenshots/dashboard.png"
+      description: "Your home base for money: balances, recent activity, and how your month is shaping up at a glance.",
+      features: ["Budget overview cards", "Spending trend charts", "Quick actions", "Recent transactions list"],
+      imagePath: "/images/screenshots/Dashboard.png"
     },
     {
       name: "Expense Log",
-      description: "Comprehensive transaction history with filtering, categorization, and receipt attachment capabilities. Allows users to track every penny spent during their travels.",
-      features: ["Searchable transaction list", "Category filters", "Receipt photo upload", "Edit/delete functionality"],
-      imagePath: "/images/screenshots/expense-log.png"
+      description: "Every coffee, bill, and impulse buy in one tidy list, so you don't have to scroll through bank statements.",
+      features: ["Searchable transaction list", "Category filters", "Receipt photo upload", "Easy edits"],
+      imagePath: "/images/screenshots/Expenses.png"
     },
     {
       name: "Budgets",
-      description: "Create and monitor budgets for different trip categories with smart alerts and spending insights. Set limits for accommodation, food, activities, and more.",
-      features: ["Budget creation wizard", "Category-based limits", "Progress tracking", "Alert notifications"],
-      imagePath: "/images/screenshots/budgets.png"
+      description: "Simple budgets for the stuff that matters: rent, groceries, nights out, and that \"just in case\" fund.",
+      features: ["Guided budget setup", "Category-based limits", "Progress tracking", "Friendly alerts"],
+      imagePath: "/images/screenshots/Budgets.png"
     },
     {
       name: "Savings Circles",
-      description: "Collaborative savings feature for group travel. Create shared savings goals, track contributions, and coordinate finances with travel companions.",
-      features: ["Group creation", "Goal tracking", "Member contributions", "Activity timeline"],
-      imagePath: "/images/screenshots/savings-circles.png"
+      description: "Save up together for trips, gifts, or big purchases without endless spreadsheets or awkward reminders.",
+      features: ["Create shared goals", "Track who paid what", "Member contributions view", "Activity timeline"],
+      imagePath: "/images/screenshots/SavingsCircle.png"
     },
     {
       name: "AI Chatbot",
-      description: "Intelligent assistant providing personalized financial advice, budget recommendations, and spending insights. Ask questions in natural language and get actionable guidance.",
-      features: ["Natural language interface", "Spending analysis", "Budget suggestions", "Travel tips"],
-      imagePath: "/images/screenshots/ai-chatbot.png"
+      description: "A friendly assistant you can ask, \"Can I afford this?\" without judgment or jargon.",
+      features: ["Natural language chat", "Spending breakdowns", "Budget suggestions", "Practical money tips"],
+      imagePath: "/images/screenshots/Chatbot.png"
     }
   ]
 
@@ -45,7 +45,7 @@ export default function UIShowcasePage() {
             <Badge variant="secondary">User Interface</Badge>
             <h1 className="text-4xl md:text-5xl font-bold">UI Showcase</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Take a visual tour through SpendWise&apos;s intuitive interface with annotated screenshots
+              A closer look at the key screens in SpendWise and how they come together to keep your money story clear.
             </p>
           </div>
 
@@ -57,13 +57,11 @@ export default function UIShowcasePage() {
               <Card key={index} className="overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* Screenshot */}
-                  <div className="relative min-h-[400px] bg-muted/30 rounded-lg overflow-hidden">
-                    <Image
-                      src={screen.imagePath}
+                  <div className="relative h-[600px] w-full bg-muted/30 rounded-lg overflow-hidden flex items-center justify-center">
+                    <img
+                      src={getAssetPath(screen.imagePath)}
                       alt={`${screen.name} screenshot`}
-                      fill
-                      className="object-contain p-4"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="max-w-full max-h-full object-contain p-4"
                     />
                   </div>
 

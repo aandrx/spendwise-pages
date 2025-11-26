@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Layers, FileCode, GitBranch, Database } from "lucide-react"
+import { getAssetPath } from "@/lib/utils"
 
 export default function DesignPage() {
   return (
@@ -22,9 +23,9 @@ export default function DesignPage() {
             <Card>
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-6">
-                  SpendWise follows a modern mobile application architecture with clear separation of concerns, 
-                  scalability, and maintainability as core principles. The system is built using industry-standard 
-                  design patterns and best practices.
+                  SpendWise is built like a real-world money app: the pieces that talk to your data, the screens you tap
+                  on, and the AI that gives you tips are all kept cleanly separated. That makes it easier to ship new
+                  features, track down bugs, and keep things fast and reliable as the app grows.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-3">
@@ -179,9 +180,9 @@ export default function DesignPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                  <div className="relative bg-muted/30 rounded-lg h-[600px] w-full overflow-hidden flex items-center justify-center">
                     <img
-                      src="/images/diagrams/Sprint3DCD.drawio.png"
+                      src={getAssetPath("/images/diagrams/Sprint3DCD.drawio.png")}
                       alt="Class Diagram"
                       className="max-w-full max-h-full object-contain p-8"
                     />
@@ -200,9 +201,9 @@ export default function DesignPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                  <div className="relative bg-muted/30 rounded-lg h-[600px] w-full overflow-hidden flex items-center justify-center">
                     <img
-                      src="/images/diagrams/Sprint3SD.png"
+                      src={getAssetPath("/images/diagrams/Sprint3SD.png")}
                       alt="Sequence Diagram"
                       className="max-w-full max-h-full object-contain p-8"
                     />
@@ -222,16 +223,16 @@ export default function DesignPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
-                    <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                    <div className="relative bg-muted/30 rounded-lg h-[600px] w-full overflow-hidden flex items-center justify-center">
                       <img
-                        src="/images/diagrams/Sprint3MVVM_1.png"
+                        src={getAssetPath("/images/diagrams/Sprint3MVVM_1.png")}
                         alt="Architecture Diagram - MVVM Part 1"
                         className="max-w-full max-h-full object-contain p-8"
                       />
                     </div>
-                    <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                    <div className="relative bg-muted/30 rounded-lg h-[600px] w-full overflow-hidden flex items-center justify-center">
                       <img
-                        src="/images/diagrams/Sprint3MVVM_2.png"
+                        src={getAssetPath("/images/diagrams/Sprint3MVVM_2.png")}
                         alt="Architecture Diagram - MVVM Part 2"
                         className="max-w-full max-h-full object-contain p-8"
                       />

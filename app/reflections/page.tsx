@@ -26,10 +26,9 @@ export default function ReflectionsPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  SpendWise successfully addresses the complex challenges of travel budget management through 
-                  an intuitive, feature-rich mobile application. The project demonstrates the effective integration 
-                  of modern design patterns, cloud technologies, and AI capabilities to create a comprehensive 
-                  financial management solution.
+                  SpendWise grew from a simple idea into a working money app that people can actually imagine using
+                  day to day. Along the way we learned how to connect budgets, expenses, Savings Circles, and AI in a
+                  way that feels cohesive instead of overwhelming.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -64,7 +63,7 @@ export default function ReflectionsPage() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-emerald-600 mt-1">✓</span>
-                        Simplifies travel budget management for solo and group travelers
+                        Simplifies budget management for individual users and groups
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-emerald-600 mt-1">✓</span>

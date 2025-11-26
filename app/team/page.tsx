@@ -7,56 +7,78 @@ import Image from "next/image"
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Alex Kim",
-      role: "Project Lead / Backend Developer",
-      bio: "Kept the project on track and made sure the data layer didn&apos;t fall apart. Enjoys clean APIs, clear schemas, and commit messages that actually make sense.",
-      contributions: ["Project management", "Backend architecture", "Database design", "API development"],
-      avatar: "/images/team/member1.jpg",
-      initials: "TM",
-      github: "https://github.com/username1",
-      linkedin: "https://linkedin.com/in/username1",
-      email: "member1@example.com"
+      name: "Steven Mai",
+      role: "Product & Backend Lead",
+      bio: "Keeps SpendWise pointed in the right direction and makes sure the APIs behave. Loves tidy schemas and dashboards that load instantly.",
+      contributions: ["Product direction", "Backend architecture", "API design", "Code reviews"],
+      avatar: "/images/team/steven.jpg",
+      initials: "SM",
+      github: "#",
+      linkedin: "#",
+      email: "steven@example.com"
     },
     {
-      name: "Jordan Lee",
-      role: "Frontend Developer / UI/UX Designer",
-      bio: "Designed and built the interface you see here, with an unhealthy attention to spacing, contrast, and making forms feel less painful.",
-      contributions: ["UI/UX design", "Frontend development", "Component library", "User testing"],
-      avatar: "/images/team/member2.jpg",
-      initials: "TM",
-      github: "https://github.com/username2",
-      linkedin: "https://linkedin.com/in/username2",
-      email: "member2@example.com"
+      name: "Andrew Liu",
+      role: "Frontend & UX Engineer",
+      bio: "Designed the interface, built the component library, and fought for every pixel of breathing room.",
+      contributions: ["UI system", "Accessibility polish", "Responsive layouts", "Design specs"],
+      avatar: "/images/team/andrew.jpg",
+      initials: "AL",
+      github: "#",
+      linkedin: "#",
+      email: "andrew@example.com"
     },
     {
-      name: "Sam Patel",
-      role: "Full Stack Developer",
-      bio: "Jumped between frontend and backend to glue everything together. If something talks to something else, Sam probably touched it.",
-      contributions: ["Feature implementation", "Integration testing", "Bug fixes", "Documentation"],
-      avatar: "/images/team/member3.jpg",
-      initials: "TM",
-      github: "https://github.com/username3",
-      linkedin: "https://linkedin.com/in/username3",
-      email: "member3@example.com"
+      name: "Shriyan Somalinga",
+      role: "Full Stack Engineer",
+      bio: "Bridged the frontend and backend, making sure budgets, expenses, and Savings Circles actually talk to each other.",
+      contributions: ["Feature integration", "Savings Circles backend", "Testing", "Documentation"],
+      avatar: "/images/team/shriyan.jpg",
+      initials: "SS",
+      github: "#",
+      linkedin: "#",
+      email: "shriyan@example.com"
     },
     {
-      name: "Riley Chen",
-      role: "AI/ML Engineer",
-      bio: "Built the brains behind the AI assistant and spent a lot of time making sure the model talked about money in a helpful, not scary, way.",
-      contributions: ["AI chatbot", "ML models", "Data analysis", "Natural language processing"],
-      avatar: "/images/team/member4.jpg",
-      initials: "TM",
-      github: "https://github.com/username4",
-      linkedin: "https://linkedin.com/in/username4",
-      email: "member4@example.com"
+      name: "Sishnukeshav Balamurali",
+      role: "AI & Insights Engineer",
+      bio: "Trained and tuned the AI assistant so it gives useful money advice instead of generic tips.",
+      contributions: ["AI chatbot", "Insight generation", "Data pipelines", "Privacy guardrails"],
+      avatar: "/images/team/sishnu.jpg",
+      initials: "SB",
+      github: "#",
+      linkedin: "#",
+      email: "sishnu@example.com"
+    },
+    {
+      name: "Rohan Banerjee",
+      role: "Mobile & QA Engineer",
+      bio: "Took every feature for a spin on different devices and kept the mobile experience snappy.",
+      contributions: ["Mobile layout tuning", "Manual QA passes", "Bug triage", "Release notes"],
+      avatar: "/images/team/rohan.jpg",
+      initials: "RB",
+      github: "#",
+      linkedin: "#",
+      email: "rohan@example.com"
+    },
+    {
+      name: "Rishabh Raman",
+      role: "DevOps & Performance Engineer",
+      bio: "Handled builds, deployments, and performance tweaks so SpendWise feels fast and reliable.",
+      contributions: ["CI/CD pipeline", "Performance profiling", "Monitoring setup", "Infrastructure"],
+      avatar: "/images/team/rishabh.jpg",
+      initials: "RR",
+      github: "#",
+      linkedin: "#",
+      email: "rishabh@example.com"
     }
   ]
 
   const websiteDeploymentTeam = [
     {
-      name: "Taylor Rivers",
+      name: "Rishabh Raman",
       role: "DevOps / Website Deployment",
-      contribution: "Set up the GitHub Pages pipeline and wrestled with configs so the site actually shows up at the right URL."
+      contribution: "Set up the GitHub Pages pipeline, optimized build settings, and kept deployments steady."
     }
   ]
 
@@ -68,7 +90,7 @@ export default function TeamPage() {
             <Badge variant="secondary">Our Team</Badge>
             <h1 className="text-4xl md:text-5xl font-bold">Meet the Team</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The talented individuals who brought SpendWise to life
+              The team of students who built SpendWise!
             </p>
           </div>
 
@@ -211,17 +233,17 @@ export default function TeamPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-sm text-muted-foreground">
                 <p>
-                  We would like to express our gratitude to everyone who contributed to making SpendWise 
-                  a reality. Special thanks to our advisors, mentors, and early testers who provided 
+                  We would like to express our thanks to everyone who contributed to making SpendWise 
+                  a reality. Special thanks to our instructor, mentor, and other TA's who provided 
                   invaluable feedback throughout the development process.
                 </p>
                 <p>
-                  This project was built with support from [University/Organization Name], utilizing 
-                  modern technologies and frameworks including React Native, Node.js, PostgreSQL, and AWS.
+                  This project was built with support from Georgia Institute of Technology, utilizing 
+                  tried and true technologies and frameworks including Java, Firebase, Android Studio and MVVM architecture.
                 </p>
                 <p>
                   The collaborative effort of our diverse team members, each bringing unique skills and 
-                  perspectives, was instrumental in creating a comprehensive and user-friendly application.
+                  perspectives, was vital in creating a comprehensive and user-friendly application.
                 </p>
               </CardContent>
             </Card>

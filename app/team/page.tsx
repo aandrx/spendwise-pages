@@ -7,9 +7,9 @@ import Image from "next/image"
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Team Member 1",
+      name: "Alex Kim",
       role: "Project Lead / Backend Developer",
-      bio: "Led the project and architected the backend infrastructure. Specialized in database design and API development.",
+      bio: "Kept the project on track and made sure the data layer didn&apos;t fall apart. Enjoys clean APIs, clear schemas, and commit messages that actually make sense.",
       contributions: ["Project management", "Backend architecture", "Database design", "API development"],
       avatar: "/images/team/member1.jpg",
       initials: "TM",
@@ -18,9 +18,9 @@ export default function TeamPage() {
       email: "member1@example.com"
     },
     {
-      name: "Team Member 2",
+      name: "Jordan Lee",
       role: "Frontend Developer / UI/UX Designer",
-      bio: "Designed and implemented the user interface with focus on accessibility and user experience.",
+      bio: "Designed and built the interface you see here, with an unhealthy attention to spacing, contrast, and making forms feel less painful.",
       contributions: ["UI/UX design", "Frontend development", "Component library", "User testing"],
       avatar: "/images/team/member2.jpg",
       initials: "TM",
@@ -29,9 +29,9 @@ export default function TeamPage() {
       email: "member2@example.com"
     },
     {
-      name: "Team Member 3",
+      name: "Sam Patel",
       role: "Full Stack Developer",
-      bio: "Worked across the stack implementing features and ensuring seamless integration between frontend and backend.",
+      bio: "Jumped between frontend and backend to glue everything together. If something talks to something else, Sam probably touched it.",
       contributions: ["Feature implementation", "Integration testing", "Bug fixes", "Documentation"],
       avatar: "/images/team/member3.jpg",
       initials: "TM",
@@ -40,9 +40,9 @@ export default function TeamPage() {
       email: "member3@example.com"
     },
     {
-      name: "Team Member 4",
+      name: "Riley Chen",
       role: "AI/ML Engineer",
-      bio: "Developed the AI chatbot and implemented machine learning models for financial insights and recommendations.",
+      bio: "Built the brains behind the AI assistant and spent a lot of time making sure the model talked about money in a helpful, not scary, way.",
       contributions: ["AI chatbot", "ML models", "Data analysis", "Natural language processing"],
       avatar: "/images/team/member4.jpg",
       initials: "TM",
@@ -54,9 +54,9 @@ export default function TeamPage() {
 
   const websiteDeploymentTeam = [
     {
-      name: "Deployment Lead",
+      name: "Taylor Rivers",
       role: "DevOps / Website Deployment",
-      contribution: "Set up GitHub Pages deployment pipeline and created this showcase website"
+      contribution: "Set up the GitHub Pages pipeline and wrestled with configs so the site actually shows up at the right URL."
     }
   ]
 

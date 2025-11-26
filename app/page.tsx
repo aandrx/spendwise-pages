@@ -8,18 +8,18 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-emerald-50 to-white">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-linear-to-b from-emerald-50 to-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6">
             <Badge variant="secondary" className="mb-4">
-              Travel Budget Management
+              Money, but organized
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Welcome to <span className="text-emerald-600">SpendWise</span>
+              <span className="text-emerald-600">SpendWise</span>, your smart money manager
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A comprehensive travel budgeting application designed to simplify expense tracking, 
-              budget management, and collaborative savings for solo and group travelers.
+              Track where your money&apos;s going, set budgets that actually stick, and save together with friends
+              using Savings Circles – all with a little help from AI when you need it.
             </p>
             <div className="flex gap-4 justify-center pt-4">
               <Button asChild size="lg">
@@ -37,34 +37,37 @@ export default function Home() {
 
       {/* Introduction Section */}
       <section id="introduction" className="py-16 px-4 md:px-6 lg:px-8">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-4xl space-y-12 text-center">
+          <div className="space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold">Project Overview</h2>
+            <p className="text-lg text-muted-foreground">
+              We had one goal in mind: make it easier for people to see their money at a glance,
+              stick to a plan, and save up for things that actually matter. Whether you&apos;re managing your own
+              budget or sharing expenses with a group, SpendWise keeps everything in one clear, calm place.
+            </p>
+          </div>
+
           <div className="space-y-8">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Project Overview</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                SpendWise is an innovative mobile application that revolutionizes how travelers 
-                manage their finances during trips. Whether you&apos;re traveling solo or with a group, 
-                SpendWise provides the tools you need to stay on budget and make informed financial decisions.
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold">Project Goals</h3>
+              <p className="text-lg text-muted-foreground">
+                Our goal with SpendWise is to turn day‑to‑day money management into something you can actually keep up with.
+                That means quick logging of expenses, budgets that are easy to tweak, and a simple way to save together
+                without endless spreadsheets or group chats full of receipts.
               </p>
             </div>
-
-            <div className="prose prose-lg max-w-3xl mx-auto">
-              <h3 className="text-2xl font-semibold">Project Goals</h3>
-              <p>
-                The primary aim of SpendWise is to ease the process of creating and managing travel 
-                itineraries and expenses for both solo and group travelers. By combining intuitive 
-                design with powerful features, we&apos;ve created a solution that addresses the common 
-                pain points of travel budget management.
-              </p>
-              
-              <h3 className="text-2xl font-semibold mt-8">Key Challenges Addressed</h3>
-              <ul className="space-y-2">
-                <li>Complex expense splitting among group members</li>
-                <li>Real-time budget tracking and alerts</li>
-                <li>Collaborative savings goals</li>
-                <li>Intelligent financial recommendations</li>
-                <li>Multi-currency support for international travel</li>
-              </ul>
+            
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold">Key Challenges Addressed</h3>
+              <div className="text-left inline-block">
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Complex expense splitting among group members</li>
+                  <li>Real-time budget tracking and alerts</li>
+                  <li>Collaborative savings goals through Savings Circles</li>
+                  <li>Intelligent financial recommendations powered by AI</li>
+                  <li>Multi-currency support</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -80,7 +83,7 @@ export default function Home() {
                 <Wallet className="h-10 w-10 text-emerald-600 mb-2" />
                 <CardTitle>Dashboard</CardTitle>
                 <CardDescription>
-                  Comprehensive overview of your travel finances with real-time updates
+                  Comprehensive overview of your finances with real-time updates
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -100,7 +103,7 @@ export default function Home() {
                 <Users className="h-10 w-10 text-emerald-600 mb-2" />
                 <CardTitle>Budgets</CardTitle>
                 <CardDescription>
-                  Set and monitor budgets for different trip categories with smart alerts
+                  Set and monitor budgets for different categories with smart alerts
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -110,7 +113,7 @@ export default function Home() {
                 <Bot className="h-10 w-10 text-emerald-600 mb-2" />
                 <CardTitle>Savings Circles</CardTitle>
                 <CardDescription>
-                  Collaborate with travel companions on shared savings goals
+                  Collaborate with group members on shared savings goals
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -124,7 +127,7 @@ export default function Home() {
                 <CardDescription className="text-base">
                   Get personalized financial advice, budget recommendations, and spending insights 
                   powered by artificial intelligence. Ask questions in natural language and receive 
-                  actionable guidance for your travel finances.
+                  actionable guidance for your finances.
                 </CardDescription>
               </CardHeader>
             </Card>

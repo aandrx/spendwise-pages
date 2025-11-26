@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Layers, FileCode, GitBranch, Database } from "lucide-react"
-import Image from "next/image"
 
 export default function DesignPage() {
   return (

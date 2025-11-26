@@ -31,25 +31,25 @@ export default function DemoPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-muted/30 rounded-lg flex items-center justify-center">
-                  {/* YouTube Embed Placeholder */}
-                  <div className="text-center space-y-4">
-                    <Play className="h-16 w-16 text-muted-foreground mx-auto" />
-                    <p className="text-muted-foreground font-semibold">[Video Demo Placeholder]</p>
-                    <p className="text-sm text-muted-foreground max-w-md">
-                      Replace <code className="bg-muted px-2 py-1 rounded text-xs">YOUR_VIDEO_ID_HERE</code> in 
-                      the code with your actual YouTube video ID
-                    </p>
-                  </div>
-                  
-                  {/* Uncomment this section and add your YouTube video ID above */}
-                  {/* <iframe
-                    className="w-full h-full rounded-lg"
-                    src={`https://www.youtube.com/embed/${youtubeVideoId}`}
-                    title="SpendWise Application Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe> */}
+                <div className="aspect-video bg-muted/30 rounded-lg overflow-hidden">
+                  {youtubeVideoId && youtubeVideoId !== "YOUR_VIDEO_ID_HERE" ? (
+                    <iframe
+                      className="w-full h-full rounded-lg"
+                      src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+                      title="SpendWise Application Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-center space-y-4">
+                      <Play className="h-16 w-16 text-muted-foreground mx-auto" />
+                      <p className="text-muted-foreground font-semibold">[Video Demo Placeholder]</p>
+                      <p className="text-sm text-muted-foreground max-w-md">
+                        Replace <code className="bg-muted px-2 py-1 rounded text-xs">YOUR_VIDEO_ID_HERE</code> in 
+                        the code with your actual YouTube video ID
+                      </p>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -131,38 +131,6 @@ export default function DemoPage() {
                 </CardContent>
               </Card>
             </div>
-          </section>
-
-          {/* Additional Resources */}
-          <section className="mt-12">
-            <Card className="bg-emerald-50/50 border-emerald-200">
-              <CardHeader>
-                <CardTitle>Want to Learn More?</CardTitle>
-                <CardDescription>
-                  Explore other sections to dive deeper into SpendWise&apos;s features and architecture
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="/ui-showcase" 
-                  className="flex-1 px-4 py-3 bg-white rounded-lg border hover:border-emerald-600 transition-colors text-center"
-                >
-                  View UI Screenshots
-                </a>
-                <a 
-                  href="/design" 
-                  className="flex-1 px-4 py-3 bg-white rounded-lg border hover:border-emerald-600 transition-colors text-center"
-                >
-                  Explore Architecture
-                </a>
-                <a 
-                  href="/team" 
-                  className="flex-1 px-4 py-3 bg-white rounded-lg border hover:border-emerald-600 transition-colors text-center"
-                >
-                  Meet the Team
-                </a>
-              </CardContent>
-            </Card>
           </section>
         </div>
       </section>

@@ -153,25 +153,6 @@ export default function ReflectionsPage() {
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <AlertCircle className="h-5 w-5 text-amber-600" />
-                    UI/UX Consistency
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    <strong>Challenge:</strong> Maintaining consistent design language and user experience 
-                    across diverse features while keeping the interface intuitive for users with varying 
-                    technical expertise.
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Solution:</strong> Developed a comprehensive design system with reusable components, 
-                    conducted extensive user testing, and iterated based on feedback to refine the user experience.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </section>
 
@@ -219,37 +200,6 @@ export default function ReflectionsPage() {
                 </CardContent>
               </Card>
             </div>
-          </section>
-
-          {/* Personal Contributions */}
-          <section>
-            <Card className="bg-emerald-50/50 border-emerald-200">
-              <CardHeader>
-                <CardTitle>My Contributions</CardTitle>
-                <CardDescription>Key areas where I made significant impact on the project</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 text-sm text-muted-foreground">
-                  <p>
-                    [Add your specific contributions here. Examples might include:]
-                  </p>
-                  <ul className="space-y-2 ml-4">
-                    <li>• Led the design and implementation of the Dashboard feature</li>
-                    <li>• Architected the real-time synchronization system</li>
-                    <li>• Developed the AI chatbot integration and natural language processing</li>
-                    <li>• Created the design system and component library</li>
-                    <li>• Implemented the expense splitting algorithms</li>
-                    <li>• Set up CI/CD pipeline and deployment infrastructure</li>
-                    <li>• Conducted user research and usability testing</li>
-                    <li>• Authored technical documentation and API specifications</li>
-                  </ul>
-                  <p className="mt-4">
-                    Throughout this project, I grew both technically and professionally, learning to balance 
-                    technical excellence with practical constraints while delivering value to end users.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </section>
         </div>
       </section>

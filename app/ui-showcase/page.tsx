@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Smartphone, Palette, Layout } from "lucide-react"
+import { Smartphone, Layout } from "lucide-react"
+import Image from "next/image"
 
 export default function UIShowcasePage() {
   const screenshots = [
@@ -48,40 +49,6 @@ export default function UIShowcasePage() {
             </p>
           </div>
 
-          {/* UI/UX Philosophy */}
-          <section className="mb-16">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Palette className="h-6 w-6 text-emerald-600" />
-                  Design Philosophy
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Consistency</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Unified design language across all screens with consistent color schemes, typography, and component styling
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Accessibility</h3>
-                    <p className="text-sm text-muted-foreground">
-                      WCAG 2.1 compliant with proper contrast ratios, scalable fonts, and screen reader support
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Intuitive Navigation</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Clear information hierarchy with familiar navigation patterns and minimal learning curve
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </section>
-
           {/* Screenshots Section */}
           <section className="space-y-12">
             <h2 className="text-3xl font-bold">Key Screens</h2>
@@ -89,15 +56,15 @@ export default function UIShowcasePage() {
             {screenshots.map((screen, index) => (
               <Card key={index} className="overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-6">
-                  {/* Screenshot Placeholder */}
-                  <div className="bg-muted/30 flex items-center justify-center min-h-[400px] p-8">
-                    <div className="text-center space-y-4">
-                      <Smartphone className="h-16 w-16 text-muted-foreground mx-auto" />
-                      <p className="text-muted-foreground font-semibold">[{screen.name} Screenshot]</p>
-                      <p className="text-xs text-muted-foreground">
-                        Add screenshot to: <code className="bg-muted px-2 py-1 rounded">{screen.imagePath}</code>
-                      </p>
-                    </div>
+                  {/* Screenshot */}
+                  <div className="relative min-h-[400px] bg-muted/30 rounded-lg overflow-hidden">
+                    <Image
+                      src={screen.imagePath}
+                      alt={`${screen.name} screenshot`}
+                      fill
+                      className="object-contain p-4"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
                   </div>
 
                   {/* Description */}
@@ -126,68 +93,6 @@ export default function UIShowcasePage() {
                 </div>
               </Card>
             ))}
-          </section>
-
-          {/* Design System */}
-          <section className="mt-16">
-            <h2 className="text-3xl font-bold mb-6">Design System</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Color Palette</CardTitle>
-                  <CardDescription>Carefully chosen colors for optimal readability and visual appeal</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-5 gap-4">
-                    <div className="space-y-2">
-                      <div className="h-16 bg-emerald-600 rounded"></div>
-                      <p className="text-xs text-center">Primary</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-16 bg-emerald-100 rounded"></div>
-                      <p className="text-xs text-center">Light</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-16 bg-gray-900 rounded"></div>
-                      <p className="text-xs text-center">Dark</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-16 bg-gray-100 rounded"></div>
-                      <p className="text-xs text-center">Background</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-16 bg-red-500 rounded"></div>
-                      <p className="text-xs text-center">Accent</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Typography</CardTitle>
-                  <CardDescription>Clear hierarchy with readable font sizes and weights</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <p className="text-2xl font-bold">Heading 1</p>
-                    <p className="text-xs text-muted-foreground">24px / Bold</p>
-                  </div>
-                  <div>
-                    <p className="text-xl font-semibold">Heading 2</p>
-                    <p className="text-xs text-muted-foreground">20px / Semibold</p>
-                  </div>
-                  <div>
-                    <p className="text-base">Body Text</p>
-                    <p className="text-xs text-muted-foreground">16px / Regular</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Caption Text</p>
-                    <p className="text-xs text-muted-foreground">14px / Regular</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </section>
         </div>
       </section>

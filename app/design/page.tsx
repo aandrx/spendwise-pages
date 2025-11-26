@@ -179,16 +179,12 @@ export default function DesignPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="bg-muted/30 rounded-lg p-8 flex items-center justify-center min-h-[400px]">
-                    <div className="text-center space-y-4">
-                      <FileCode className="h-16 w-16 text-muted-foreground mx-auto" />
-                      <p className="text-muted-foreground">
-                        [Placeholder for Class Diagram]
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        Add your class diagram image to: <code className="text-xs bg-muted px-2 py-1 rounded">public/images/diagrams/class-diagram.png</code>
-                      </p>
-                    </div>
+                  <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                    <img
+                      src="/images/diagrams/Sprint3DCD.drawio.png"
+                      alt="Class Diagram"
+                      className="max-w-full max-h-full object-contain p-8"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -204,16 +200,12 @@ export default function DesignPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="bg-muted/30 rounded-lg p-8 flex items-center justify-center min-h-[400px]">
-                    <div className="text-center space-y-4">
-                      <GitBranch className="h-16 w-16 text-muted-foreground mx-auto" />
-                      <p className="text-muted-foreground">
-                        [Placeholder for Sequence Diagram]
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        Add your sequence diagram to: <code className="text-xs bg-muted px-2 py-1 rounded">public/images/diagrams/sequence-diagram.png</code>
-                      </p>
-                    </div>
+                  <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                    <img
+                      src="/images/diagrams/Sprint3SD.png"
+                      alt="Sequence Diagram"
+                      className="max-w-full max-h-full object-contain p-8"
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -229,15 +221,20 @@ export default function DesignPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="bg-muted/30 rounded-lg p-8 flex items-center justify-center min-h-[400px]">
-                    <div className="text-center space-y-4">
-                      <Layers className="h-16 w-16 text-muted-foreground mx-auto" />
-                      <p className="text-muted-foreground">
-                        [Placeholder for Architecture Diagram]
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        Add your architecture diagram to: <code className="text-xs bg-muted px-2 py-1 rounded">public/images/diagrams/architecture-diagram.png</code>
-                      </p>
+                  <div className="space-y-6">
+                    <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                      <img
+                        src="/images/diagrams/Sprint3MVVM_1.png"
+                        alt="Architecture Diagram - MVVM Part 1"
+                        className="max-w-full max-h-full object-contain p-8"
+                      />
+                    </div>
+                    <div className="relative bg-muted/30 rounded-lg min-h-[400px] overflow-hidden flex items-center justify-center">
+                      <img
+                        src="/images/diagrams/Sprint3MVVM_2.png"
+                        alt="Architecture Diagram - MVVM Part 2"
+                        className="max-w-full max-h-full object-contain p-8"
+                      />
                     </div>
                   </div>
                 </CardContent>
@@ -248,21 +245,15 @@ export default function DesignPage() {
           {/* Technology Stack */}
           <section>
             <h2 className="text-3xl font-bold mb-6">Technology Stack</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Frontend</CardTitle>
+                  <CardTitle>Programming Language</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <Badge variant="outline">React Native / Flutter</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">TypeScript</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">Redux / MobX</Badge>
+                      <Badge variant="outline">Java</Badge>
                     </li>
                   </ul>
                 </CardContent>
@@ -270,37 +261,12 @@ export default function DesignPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Backend</CardTitle>
+                  <CardTitle>Backend & Database</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <Badge variant="outline">Node.js / Python</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">Express / FastAPI</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">REST API</Badge>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Database & Cloud</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">PostgreSQL / MongoDB</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">Firebase / AWS</Badge>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Badge variant="outline">Redis Cache</Badge>
+                      <Badge variant="outline">Firebase</Badge>
                     </li>
                   </ul>
                 </CardContent>

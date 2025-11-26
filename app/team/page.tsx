@@ -102,13 +102,25 @@ export default function TeamPage() {
       name: "Steven Mai",
       role: "Backend & Infrastructure Lead",
       contribution:
-        "Optimized the Next.js build process, configured static export settings, and implemented asset path handling for GitHub Pages deployment. ",
+        "Optimized the Next.js build process for static export, configured basePath and asset handling for GitHub Pages deployment, ensured proper routing and image optimization, and set up the production build pipeline for seamless hosting.",
     },
     {
       name: "Andrew Liu",
       role: "Frontend & Build Optimization",
       contribution:
-        "Architected the deployment pipeline, configured GitHub Actions, and ensured seamless integration with GitHub Pages.",
+        "Architected the CI/CD deployment pipeline, configured GitHub Actions workflows for automated builds and deployments, set up branch protection and deployment triggers, and ensured seamless integration with GitHub Pages including custom domain configuration.",
+    },
+    {
+      name: "Shriyan Somalinga",
+      role: "Full Stack Integration & Testing",
+      contribution:
+        "Integrated frontend and backend components for the showcase website, ensuring budgets, expenses, and features communicate properly in the deployed environment.",
+    },
+    {
+      name: "Sishnukeshav Balamurali",
+      role: "Integration & Documentation",
+      contribution:
+        "Ensured features and insights generation work seamlessly in production, with proper privacy guardrails for the deployed site.",
     },
   ];
 
